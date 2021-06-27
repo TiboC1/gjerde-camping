@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 340e935e-a842-40c1-b3be-f0667d36f47a # Common
+handle: accomodationstitle
+instructions: ''
+name: AccomodationsTitle
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

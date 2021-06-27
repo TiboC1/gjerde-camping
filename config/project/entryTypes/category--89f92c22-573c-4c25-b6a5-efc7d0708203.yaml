@@ -28,9 +28,9 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: photoAlbums
+handle: category
 hasTitleField: true
-name: 'Photo Albums'
+name: Category
 section: 5e15932e-bd26-44ff-9f28-cb6c438e1e34 # Photo Categories
 sortOrder: 1
 titleFormat: null

@@ -58,7 +58,7 @@ fieldLayouts:
 handle: cabins
 hasTitleField: true
 name: Cabins
-section: b736fa2c-579c-42f8-8777-eb0a6a1e3852 # Services
+section: b736fa2c-579c-42f8-8777-eb0a6a1e3852 # Accomodations
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

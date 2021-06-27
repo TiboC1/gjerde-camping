@@ -1,8 +1,8 @@
 contentColumnType: string
 fieldGroup: 340e935e-a842-40c1-b3be-f0667d36f47a # Common
-handle: albumImages
+handle: image
 instructions: ''
-name: 'Album Images'
+name: Image
 searchable: false
 settings:
   allowSelfRelations: false
@@ -11,7 +11,7 @@ settings:
     - image
   defaultUploadLocationSource: 'volume:629ee63d-b042-446e-92f3-5d03099f25d6' # Photo Album
   defaultUploadLocationSubpath: ''
-  limit: ''
+  limit: '1'
   localizeRelations: false
   previewMode: full
   restrictFiles: '1'

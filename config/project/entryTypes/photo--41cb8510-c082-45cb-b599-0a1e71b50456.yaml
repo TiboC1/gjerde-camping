@@ -1,5 +1,5 @@
 fieldLayouts:
-  d86eaa5d-b5dc-491b-bcd1-10efde5796c9:
+  c10b7b03-f43a-45b6-895d-09b669a7a5dc:
     tabs:
       -
         elements:
@@ -26,30 +26,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
-          -
-            fieldUid: 6e60e668-4a41-41cc-8a34-0f476fed53fc # Service Icon
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 35335f0a-2360-425c-bec6-a8e20c249e46 # Description
-            instructions: ''
-            label: ''
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
         name: Content
         sortOrder: 1
-handle: services
+handle: photo
 hasTitleField: true
-name: Services
-section: 501fca6a-4c06-4933-8a5c-764182d80cd3 # Services
+name: Photo
+section: 22063a2e-a79d-4fe5-8efa-ba6ce00aacb1 # Photos
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
