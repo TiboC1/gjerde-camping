@@ -26,6 +26,183 @@ fieldLayouts:
             type: craft\fieldlayoutelements\EntryTitleField
             warning: null
             width: 100
+          -
+            heading: SEO
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: ae8e12a8-e89b-4b70-811c-a76d258739d2 # Title Tag
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 03bc0d31-954d-49ce-9f83-2110b29fdfa5 # URL Tag
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d13a04c5-1b82-4937-9619-0d1bda7a004c # Description Tag
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2d60eb7e-788c-4d0d-98c5-1e7ece6a1135 # Image Tag
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: HEADER
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: dacd5f36-55dd-4da3-8533-9102f19f5b80 # Header Title
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 86cbfc6b-2acd-4bd7-ba76-ccda847449e4 # Header Intro
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ac38d72a-af9d-484e-a135-1b28dc48b0e3 # Header Image
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: INTRO
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 345d915d-6b91-41c7-b70b-d38b48b61499 # Intro Title
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 51804652-e925-4e6f-b8f8-6ddf00578f0e # Intro Text
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d9c1618a-b5e8-4988-ac20-3f039b34b723 # Intro Image
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: SERVICES
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 65e0c5a7-383a-403f-aef3-970aa4d2f888 # Services Title
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: ACCOMODATIONS
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: b2629ccf-6435-4ce8-8776-b41d423dd892 # AccomodationsTitle
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: REVIEWS
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: e51cd8bf-e6f2-42f5-a1b1-6958c677d048 # Testimonials Title
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e821e044-4651-4757-8cb5-df7d83c0936c # Testimonials Description
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: CONTACT
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: c5cfeb7d-33aa-4d76-9cad-237f33f8c10a # Contact Title
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 50699530-9839-4c13-993e-0ea84bc32145 # Contact Description
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 handle: homepage
