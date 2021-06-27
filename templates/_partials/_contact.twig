@@ -1,0 +1,96 @@
+<div id="thanks" class="a-notification--success alert alert-dismissible fade d-none mb-0" role="alert">
+    <p class="message notice text-center py-1 mb-0 font-weight-bold h4">{{ "Success!" | upper }}</p>
+    <button type="button" class="close my-auto" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+<div id="callMe" class="form-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <div class="section-title">CONTACT</div>
+                    <h2>Get In Touch Using The Form</h2>
+                    <p>You can stop by our office for a cup of coffee and just use the contact form below for any
+                        questions and inquiries</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address"><i class="fas fa-map-marker-alt"></i> 22nd Innovative Street, San Francisco,
+                            CA 94043, US
+                        </li>
+                        <li><i class="fas fa-phone"></i><a href="tel:003024630820"> +81 720 22 126</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:office@aria.com"> office@aria.com</a></li>
+                    </ul>
+                    <h3>Follow Aria On Social Media</h3>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-behance fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+
+                <!-- Contact Form -->
+
+                {% macro errorList(errors) %}
+                    {% if errors %}
+                        {{ ul(errors, {class: 'errors'}) }}
+                    {% endif %}
+                {% endmacro %}
+
+                {% set message = message ?? null %}
+
+                <form method="post" id="contactForm" action="" accept-charset="UTF-8">
+                    {{ csrfInput() }}
+                    {{ actionInput('contact-form/send') }}
+                    {{ redirectInput('#success') }}
+                    <div class="form-group">
+                        {{ input('text', 'fromName', message.fromName ?? '', {
+                            id: 'from-name',
+                            class: "form-control-input",
+                            autocomplete: 'name',
+                        }) }}
+                        <label class="label-control" for="from-name">Your Name</label>
+                        <div class="help-block with-errors">
+                            {{ message ? _self.errorList(message.getErrors('fromName')) }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        {{ input('email', 'fromEmail', message.fromEmail ?? '', {
+                            id: 'from-email',
+                            class:"form-control-input",
+                            autocomplete: 'email',
+                        }) }}
+                        <label class="label-control" for="from-email">Your Email</label>
+                        <div class="help-block with-errors">
+                            {{ message ? _self.errorList(message.getErrors('fromEmail')) }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        {{ tag('textarea', {
+                            text: message.message ?? '',
+                            id: 'message',
+                            name: 'message',
+                            class:"form-control-textarea"
+                        }) }}
+                        <label class="label-control" for="message">Message</label>
+                        <div class="help-block with-errors">
+                            {{ message ? _self.errorList(message.getErrors('message')) }}
+                        </div>
+                    </div>
+                    <input id="HoneyPot" name="HoneyPot" type="text" style="display: none">
+                    <div class="form-group">
+                        <button id="submitBtn" type="submit" class="form-control-submit-button btn">SUBMIT MESSAGE
+                        </button>
+                        <p id="successP" class="text-center white p-2 d-none">success</p>
+                    </div>
+                </form>
+                <!-- end of contact form -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+
+</div> <!-- end of form-1 -->

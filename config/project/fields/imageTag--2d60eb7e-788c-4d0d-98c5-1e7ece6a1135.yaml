@@ -1,0 +1,32 @@
+contentColumnType: string
+fieldGroup: 93181e72-df4b-4d19-aa48-41e97d5e3f82 # SEO
+handle: imageTag
+instructions: ''
+name: 'Image Tag'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:629ee63d-b042-446e-92f3-5d03099f25d6' # Photo Album
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: ''
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:629ee63d-b042-446e-92f3-5d03099f25d6' # Photo Album
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

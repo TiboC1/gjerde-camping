@@ -1,0 +1,14 @@
+contentColumnType: string(255)
+fieldGroup: 93181e72-df4b-4d19-aa48-41e97d5e3f82 # SEO
+handle: urlTag
+instructions: ''
+name: 'URL Tag'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Url
