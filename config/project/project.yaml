@@ -1,0 +1,60 @@
+dateModified: 1624722838
+email:
+  fromEmail: tibocolman@gmail.com
+  fromName: Gjerde-Camping
+  replyToEmail: null
+  template: null
+  transportSettings:
+    encryptionMethod: ''
+    host: smtp.mailtrap.io
+    password: 9a6a29c3e987a5
+    port: '2525'
+    timeout: '10'
+    useAuthentication: '1'
+    username: a33202e87fb2ec
+  transportType: craft\mail\transportadapters\Smtp
+plugins:
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      prependSender: ''
+      prependSubject: 'New message from Gjerde-Camping'
+      successFlashMessage: Success!
+      toEmail: tibocolman@gmail.com
+  contact-form-honeypot:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      honeypotParam: HoneyPot
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  scss:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  site-switcher:
+    edition: standard
+    enabled: true
+    schemaVersion: 0.0.0
+  twigpack:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: Gjerde-Camping
+  schemaVersion: 3.6.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

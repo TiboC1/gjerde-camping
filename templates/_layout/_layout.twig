@@ -1,0 +1,127 @@
+{% set baseUrl = craft.app.sites.primarySite.baseUrl %}
+{% hook 'get-reviews' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+          content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="gjerde-camping"/> <!-- website name -->
+    <meta property="og:site" content="https://gjerde-camping.no"/> <!-- website link -->
+    <meta property="og:title" content="Gjerde Camping"/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content=""/> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content=""/> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="https://gjerde-camping.no"/> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article"/>
+
+    <!-- Website Title -->
+    <title>Gjerde Camping</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+          integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw=="
+          crossorigin="anonymous"/>
+    <link href="{{ baseUrl }}css/bootstrap.css" rel="stylesheet">
+    <link href="{{ baseUrl }}css/fontawesome-all.css" rel="stylesheet">
+    <link href="{{ baseUrl }}css/swiper.css" rel="stylesheet">
+    <link href="{{ baseUrl }}css/magnific-popup.css" rel="stylesheet">
+    <link href="{{ baseUrl }}css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="{{ baseUrl }}images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+<!-- Preloader -->
+<div class="spinner-wrapper">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+<!-- end of preloader -->
+
+<!-- Navbar -->
+{% block nav %}
+    {% include '_partials/_nav.twig' %}
+{% endblock %}
+<!-- end of navbar -->
+
+{% block main %}
+
+    <!-- Header -->
+    {% include '_partials/_header.twig' %}
+    <!-- end of header -->
+
+    <!-- Intro -->
+    {% include '_partials/_intro.twig' %}
+    <!-- end of intro -->
+
+    <!-- Description -->
+    {% include '_partials/_description.twig' %}
+    <!-- end of description -->
+
+
+    <!-- Services -->
+    {% include '_partials/_services.twig' %}
+    <!-- end of services -->
+
+
+    <!-- Details -->
+    {% include '_partials/_details.twig' %}
+    <!-- end of details -->
+
+
+    <!-- Testimonials -->
+    {% include '_partials/_testimonials.twig' %}
+    <!-- end of testimonials -->
+
+
+    <!-- Contact -->
+    {% include '_partials/_contact.twig' %}
+    <!-- end of contact -->
+
+
+    <!-- Projects -->
+    {% include '_partials/_projects.twig' %}
+
+    <!-- Maps -->
+    {% include '_partials/_maps.twig' %}
+    <!-- end of contact -->
+
+{% endblock %}
+
+<!-- Copyright -->
+{% block footer %}
+    {% include '_partials/_footer.twig' %}
+
+    {% include '_partials/_copyright.twig' %}
+{% endblock %}
+<!-- end of copyright -->
+
+
+<!-- Scripts -->
+<script src="{{ baseUrl }}js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="{{ baseUrl }}js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+<script src="{{ baseUrl }}js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="{{ baseUrl }}js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+<script src="{{ baseUrl }}js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+<script src="{{ baseUrl }}js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+<script src="{{ baseUrl }}js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+<script src="{{ baseUrl }}js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+<script src="{{ baseUrl }}js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+<script src="{{ baseUrl }}js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>

@@ -1,0 +1,21 @@
+enableVersioning: true
+handle: homepage
+name: Homepage
+propagationMethod: all
+siteSettings:
+  17232cf9-cca3-46db-8a04-6c606a76f6f1: # Gjerde Camping EN
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: __home__
+  73698221-0357-4b8f-b5a8-be481fc10e01: # Gjerde Camping DE
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: __home__
+  d66411b8-3b8d-4763-9f8b-8f54c6ca6aef: # Gjerde-Camping NO
+    enabledByDefault: true
+    hasUrls: true
+    template: index
+    uriFormat: __home__
+type: single

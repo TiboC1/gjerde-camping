@@ -1,0 +1,21 @@
+enableVersioning: true
+handle: photoCategories
+name: 'Photo Categories'
+propagationMethod: all
+siteSettings:
+  17232cf9-cca3-46db-8a04-6c606a76f6f1: # Gjerde Camping EN
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  73698221-0357-4b8f-b5a8-be481fc10e01: # Gjerde Camping DE
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  d66411b8-3b8d-4763-9f8b-8f54c6ca6aef: # Gjerde-Camping NO
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

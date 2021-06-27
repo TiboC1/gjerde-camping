@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: nn
+name: 'Gjerde-Camping NO'
+primary: true
+siteGroup: e3eb08b8-e942-420d-96fc-96ff91d4418f # Gjerde-Camping
+sortOrder: 1

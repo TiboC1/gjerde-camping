@@ -1,0 +1,79 @@
+{% block nav %}
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="{{ baseUrl }}images/logo.svg" alt="alternative"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">{{ 'HOME'|t }} <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#intro">{{ 'INTRO'|t }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#services">{{ 'SERVICES'|t }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#callMe">{{ 'CONTACT'|t }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#projects">{{ 'ALBUM'|t }}</a>
+                </li>
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <div class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false" style="cursor: pointer">{{ 'LANGUAGE'|t }}</div>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% set element = (category ?? entry ?? null) %}
+                        {% for site in craft.app.sites.getAllSites() %}
+                            {% set locale = craft.app.i18n.getLocaleById(site.language) %}
+                            {% set siteLink = siteSwitcher(site.handle, element) %}
+                            {% if siteLink %}
+                                <a class="dropdown-item" href="{{ siteLink }}">
+                                    {% if locale == 'nn' %}
+                                        <span class="flag-icon flag-icon-no mr-2"></span>
+                                    {% elseif locale == 'en' %}
+                                        <span class="flag-icon flag-icon-gb mr-2"></span>
+                                    {% else %}
+                                        <span class="flag-icon flag-icon-de mr-2"></span>
+                                    {% endif %}
+                                    <span class="item-text">{{ locale.getDisplayName() | upper }}</span>
+                                </a>
+                                {% if not loop.last %}
+                                    <div class="dropdown-items-divide-hr"></div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+{% endblock %}

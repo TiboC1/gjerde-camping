@@ -1,0 +1,9 @@
+baseUrl: 'http://localhost:8888/en/'
+enabled: true
+handle: gjerdeCampingEn
+hasUrls: true
+language: en
+name: 'Gjerde Camping EN'
+primary: false
+siteGroup: e3eb08b8-e942-420d-96fc-96ff91d4418f # Gjerde-Camping
+sortOrder: 2
