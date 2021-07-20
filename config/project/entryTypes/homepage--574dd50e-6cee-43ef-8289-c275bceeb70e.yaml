@@ -132,10 +132,51 @@ fieldLayouts:
           -
             type: craft\fieldlayoutelements\HorizontalRule
           -
+            heading: DETAILS
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 7d7e245e-9b3d-42b3-aa11-7e016fa7b405 # Details Title
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cab1941d-81e6-4b6f-a8bd-942b6308795e # Details Image
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0bc3d459-741b-453c-96d4-74a87f2eb722 # Details
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
             heading: SERVICES
             type: craft\fieldlayoutelements\Heading
           -
             fieldUid: 65e0c5a7-383a-403f-aef3-970aa4d2f888 # Services Title
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4886b05b-74ca-4511-b779-641cade722e0 # services
             instructions: ''
             label: ''
             required: '1'
@@ -196,6 +237,20 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 50699530-9839-4c13-993e-0ea84bc32145 # Contact Description
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            heading: ALBUM
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: e057b045-4741-423f-8287-e908f780562a # albums Title
             instructions: ''
             label: ''
             required: '1'

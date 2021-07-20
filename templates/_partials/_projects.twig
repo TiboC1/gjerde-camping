@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="section-title">{{ 'Photo Album' | t }}</div>
+                <div class="section-title">{{ 'PHOTO ALBUM' | t }}</div>
                 <h2>{{ entry.albumsTitle }}</h2>
             </div> <!-- end of col -->
         </div> <!-- end of row -->
@@ -11,19 +11,20 @@
                 <!-- Filter -->
                 <div class="button-group filters-button-group">
                     {% set categories = craft.entries.section('photoCategories').all() %}
-                    <a class="button is-checked" data-filter="*"><span>SHOW ALL</span></a>
+                    <a class="button is-checked" style="text-decoration: none" data-filter="*"><span>{{ 'SHOW ALL' | t }}</span></a>
                     {% for category in categories %}
-                        <a class="button" data-filter=".{{ category.slug }}"><span>{{ category.title }}</span></a>
+                        <a class="button" style="text-decoration: none" data-filter=".{{ category.slug }}"><span>{{ category.title | upper }}</span></a>
                     {% endfor %}
                 </div> <!-- end of button group -->
                 <div class="grid">
                     {% set photos = craft.entries.section('photos').all() %}
                     {% for photo in photos %}
                         {% set categories = photo.categories.all() %}
-                        <div class="element-item {% for category in categories %}{{ category.slug }}{% endfor %}">
+                        <div class="element-item {% for category in categories %}{{ category.slug }} {% endfor %}">
                             <a class="popup-with-move-anim" href="#{{ photo.slug }}">
                                 <div class="element-item-overlay"><span>{{ photo.title }}</span></div>
-                                <img src="{{ photo.image.one().url }}" alt="alternative"></a>
+                                <img src="{{ photo.image.one().url }}" alt="alternative">
+                            </a>
                         </div>
                     {% endfor %}
                 </div> <!-- end of grid -->
@@ -41,14 +42,8 @@
     <div id="{{ photo.slug }}" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="row">
             <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-12">
-                <img class="img-fluid" src="{{ photo.image.one().url() }}" alt="alternative">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-        <div class="row">
-            <div class="col-12">
-                <a class="btn-outline-reg mfp-close as-button"
-                   href="#projects">{{ 'BACK' | t }}</a>
+            <div class="col-12 text-center">
+                <img class="img-fluid" style="object-fit: cover" src="{{ photo.image.one().url() }}" alt="alternative">
             </div> <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->

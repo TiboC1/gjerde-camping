@@ -1,8 +1,8 @@
 contentColumnType: text
 fieldGroup: 340e935e-a842-40c1-b3be-f0667d36f47a # Common
-handle: headerTitle
+handle: albumsTitle
 instructions: ''
-name: 'Header Title'
+name: 'albums Title'
 searchable: false
 settings:
   byteLimit: null

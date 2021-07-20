@@ -158,35 +158,55 @@
             }
         }
     });
-
+let sent = false;
     $('#contactForm').submit(function (ev) {
         // Prevent the form from actually submitting
         ev.preventDefault();
-
-        // Send it to the server
-        $.post({
-            url: '/',
-            dataType: 'json',
-            data: $(this).serialize(),
-            success: function (response) {
-                if (response.success) {
-                    $('#thanks').removeClass('d-none').addClass('show');
-                    $('#successP').removeClass('d-none');
-                    $('#submitBtn').attr('disabled', true).css('cursor', 'default')
-                    cformSuccess()
-                } else {
-                    // response.error will be an object containing any validation errors that occurred, indexed by field name
-                    // e.g. response.error.fromName => ['From Name is required']
-                    alert('An error occurred. Please try again.');
+        if (sent === false) {
+            // Send it to the server
+            $.post({
+                url: '/',
+                dataType: 'json',
+                data: $(this).serialize(),
+                success: function (response) {
+                    if (response.success) {
+                        $('#thanks').removeClass('d-none').addClass('show');
+                        $('#successP').removeClass('d-none');
+                        $('#submitBtn').addClass('d-none')
+                        cformSuccess()
+                        csubmitMSG(true);
+                        sent = true;
+                    } else {
+                        // response.error will be an object containing any validation errors that occurred, indexed by field name
+                        cformError();
+                        csubmitMSG(false);
+                    }
                 }
-            }
-        });
+            });
+        } else {
+            alert('Message already sent.')
+        }
     });
 
     function cformSuccess() {
         $("#contactForm")[0].reset();
         $("input").removeClass('notEmpty'); // resets the field label after submission
         $("textarea").removeClass('notEmpty'); // resets the field label after submission
+    }
+
+    function cformError() {
+        $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+            $(this).removeClass();
+        });
+    }
+
+    function csubmitMSG(valid) {
+        if (valid) {
+            var msgClasses = "d-none";
+        } else {
+            var msgClasses = "h3 text-center";
+        }
+        $("#cmsgSubmit").removeClass().addClass(msgClasses);
     }
 
     /* Move Form Fields Label When User Types */

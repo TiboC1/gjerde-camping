@@ -36,6 +36,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 51804652-e925-4e6f-b8f8-6ddf00578f0e # Intro Text
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 35335f0a-2360-425c-bec6-a8e20c249e46 # Description
             instructions: ''
             label: ''

@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: 340e935e-a842-40c1-b3be-f0667d36f47a # Common
+handle: services
+instructions: ''
+name: services
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:501fca6a-4c06-4933-8a5c-764182d80cd3' # Services
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

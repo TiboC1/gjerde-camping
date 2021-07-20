@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 340e935e-a842-40c1-b3be-f0667d36f47a # Common
+handle: footerLinks
+instructions: ''
+name: 'Footer Links'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_footerlinks}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

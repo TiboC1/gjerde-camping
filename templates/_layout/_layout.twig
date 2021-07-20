@@ -9,15 +9,15 @@
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-          content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
-    <meta name="author" content="Inovatik">
+          content="{{ entry.descriptionTag }}">
+    <meta name="author" content="Tibo C, Nordic Noir">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
     <meta property="og:site_name" content="gjerde-camping"/> <!-- website name -->
     <meta property="og:site" content="https://gjerde-camping.no"/> <!-- website link -->
     <meta property="og:title" content="Gjerde Camping"/> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content=""/> <!-- description shown in the actual shared post -->
-    <meta property="og:image" content=""/> <!-- image link, make sure it's jpg -->
+    <meta property="og:description" content="{{ entry.descriptionTag }}"/> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="{{ entry.imageTag.one().url() }}"/> <!-- image link, make sure it's jpg -->
     <meta property="og:url" content="https://gjerde-camping.no"/> <!-- where do you want your post to link to -->
     <meta property="og:type" content="article"/>
 
@@ -39,7 +39,7 @@
     <link href="{{ baseUrl }}css/styles.css" rel="stylesheet">
 
     <!-- Favicon  -->
-    <link rel="icon" href="{{ baseUrl }}images/favicon.png">
+    {#  <link rel="icon" href="{{ baseUrl }}images/favicon.png"> #}
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
 
@@ -83,11 +83,9 @@
     {% include '_partials/_details.twig' %}
     <!-- end of details -->
 
-
     <!-- Testimonials -->
     {% include '_partials/_testimonials.twig' %}
     <!-- end of testimonials -->
-
 
     <!-- Contact -->
     {% include '_partials/_contact.twig' %}

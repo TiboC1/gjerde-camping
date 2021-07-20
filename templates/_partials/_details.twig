@@ -1,22 +1,22 @@
 <div id="details" class="accordion">
-    <div class="area-1">
-    </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space -->
-    <div class="area-2">
-        {% set details = entry.extraDetails.all() %}
+    <div class="area-1" style="background: url({{ entry.detailsImage.one().url() }}) center center no-repeat; background-size: cover;">
+    </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2">
+        {% set details = entry.details.all() %}
         <!-- Accordion -->
         <div class="accordion-container" id="accordionOne">
             <h2>{{ entry.detailsTitle }}</h2>
             {% for detail in details %}
                 <div class="item">
-                    <div id="heading{{ loop.index() }}">
+                    <div id="heading{{ loop.index }}">
                         <span data-toggle="collapse" data-target="#collapse{{ loop.index }}"
-                              {% if loop.first() %}aria-expanded="true"{% endif %}
-                              aria-controls="collapse{{ loop.index() }}" role="button">
-                            <span class="accordion-title">{{ detail.title }}</span>
+                              {% if loop.first %}aria-expanded="true" {% else %}aria-expanded="false" {% endif %}
+                              aria-controls="collapse{{ loop.index }}" role="button">
+                            <span class="circle-numbering">{{ loop.index }}</span><span
+                                    class="accordion-title">{{ detail.detailTitle }}</span>
                         </span>
                     </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                         data-parent="#accordion{{ loop.index() }}">
+                    <div id="collapse{{ loop.index }}" class="collapse {% if loop.first %}show{% endif %}" aria-labelledby="heading{{ loop.index }}"
+                         data-parent="#accordionOne">
                         <div class="accordion-body">
                             {{ detail.description }}
                         </div>
@@ -25,6 +25,5 @@
             {% endfor %}
         </div> <!-- end of accordion-container -->
         <!-- end of accordion -->
-
     </div> <!-- end of area-2 -->
 </div> <!-- end of accordion -->

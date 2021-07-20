@@ -2292,7 +2292,7 @@ a:hover.back-to-top {
     /* end of intro */
     /* Description */
     .cards-1 .card {
-        max-width: 21rem;
+        width: 21rem;
     }
 
     .cards-1 div.card:nth-child(3n+2) {
