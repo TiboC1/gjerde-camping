@@ -83,7 +83,7 @@ fieldLayouts:
             fieldUid: 86cbfc6b-2acd-4bd7-ba76-ccda847449e4 # Header Intro
             instructions: ''
             label: ''
-            required: '1'
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -156,7 +156,7 @@ fieldLayouts:
             fieldUid: 0bc3d459-741b-453c-96d4-74a87f2eb722 # Details
             instructions: ''
             label: ''
-            required: '1'
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -179,7 +179,7 @@ fieldLayouts:
             fieldUid: 4886b05b-74ca-4511-b779-641cade722e0 # services
             instructions: ''
             label: ''
-            required: '1'
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -194,6 +194,15 @@ fieldLayouts:
             instructions: ''
             label: ''
             required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 037d90dc-b476-4aca-a98a-84295b48e0de # Accommodations
+            instructions: ''
+            label: ''
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null

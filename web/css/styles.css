@@ -395,7 +395,7 @@ input[type='checkbox'] {
 #pmsgSubmit.h3.text-center {
     display: block;
     margin-bottom: 0;
-    color: #b93636;
+    color: #e23838;
     font: 400 1.125rem/1rem "Open Sans", sans-serif;
 }
 
@@ -1271,7 +1271,7 @@ input[type='checkbox'] {
     color: #fff;
 }
 
-.form-1 .list-unstyled .fas {
+.form-2 .list-unstyled .fas {
     color: #14bf98;
     font-size: 0.5rem;
     line-height: 1.375rem;
@@ -1667,20 +1667,20 @@ input[type='checkbox'] {
     margin-bottom: 1.375rem;
 }
 
-.form-2 .list-unstyled {
+.form-1 .list-unstyled {
     margin-bottom: 2.25rem;
     font-size: 1rem;
     line-height: 1.625rem;
 }
 
-.form-2 .list-unstyled .fas,
-.form-2 .list-unstyled .fab {
+.form-1 .list-unstyled .fas,
+.form-1 .list-unstyled .fab {
     margin-right: 0.5rem;
     font-size: 0.875rem;
     color: #14bf98;
 }
 
-.form-2 .list-unstyled .fa-phone {
+.form-1 .list-unstyled .fa-phone {
     vertical-align: 3%;
 }
 
@@ -1688,7 +1688,7 @@ input[type='checkbox'] {
     margin-bottom: 1rem;
 }
 
-.form-2 .fa-stack {
+.form-1 .fa-stack {
     margin-right: 0.25rem;
     margin-bottom: 0.75rem;
     margin-left: 0.125rem;
@@ -1696,7 +1696,7 @@ input[type='checkbox'] {
     height: 3.25rem;
 }
 
-.form-2 .fa-stack .hexagon {
+.form-1 .fa-stack .hexagon {
     position: absolute;
     width: 3.25rem;
     height: 3.25rem;
@@ -1705,19 +1705,19 @@ input[type='checkbox'] {
     transition: all 0.2s ease;
 }
 
-.form-2 .fa-stack:hover .hexagon {
+.form-1 .fa-stack:hover .hexagon {
     background: url('../images/hexagon-white.svg') center center no-repeat;
     background-size: 3.25rem 3.25rem;
 }
 
-.form-2 .fa-stack-1x {
+.form-1 .fa-stack-1x {
     font-size: 1.5rem;
     line-height: 3.25rem;
     color: #fff;
     transition: all 0.2s ease;
 }
 
-.form-2 .fa-stack:hover .fa-stack-1x {
+.form-1 .fa-stack:hover .fa-stack-1x {
     color: #14bf98;
 }
 
@@ -2002,12 +2002,12 @@ a:hover.back-to-top {
 
     /* end of about */
     /* Contact */
-    .form-2 .list-unstyled li {
+    .form-1 .list-unstyled li {
         display: inline-block;
         margin-right: 1rem;
     }
 
-    .form-2 .list-unstyled .address {
+    .form-1 .list-unstyled .address {
         display: block;
     }
 

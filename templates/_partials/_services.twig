@@ -8,7 +8,7 @@
         </div> <!-- end of row -->
         <div class="row">
             <div class="col-lg-12">
-                {% set accomodations = craft.entries.section('accomodations').all() %}
+                {% set accomodations = entry.accommodations.all() %}
                 {% for accommodation in accomodations %}
                     <!-- Card -->
                     <div class="card">

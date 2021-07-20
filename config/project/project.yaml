@@ -1,4 +1,4 @@
-dateModified: 1626611424
+dateModified: 1626807619
 email:
   fromEmail: tibocolman@gmail.com
   fromName: Gjerde-Camping
@@ -13,6 +13,63 @@ email:
     useAuthentication: '1'
     username: a33202e87fb2ec
   transportType: craft\mail\transportadapters\Smtp
+meta:
+  __names__:
+    0bc3d459-741b-453c-96d4-74a87f2eb722: Details # Details
+    1c1efb1b-9082-4e35-af15-68efe361ce76: Services # Services
+    2d60eb7e-788c-4d0d-98c5-1e7ece6a1135: 'Image Tag' # Image Tag
+    03bc0d31-954d-49ce-9f83-2110b29fdfa5: 'URL Tag' # URL Tag
+    5cb8f5a6-999c-4913-a8e6-1164e133a608: Cabins # Cabins
+    5e15932e-bd26-44ff-9f28-cb6c438e1e34: 'Photo Categories' # Photo Categories
+    6aabffd7-64ee-400a-a933-19fd1479fb3f: 'Link Title' # Link Title
+    6e60e668-4a41-41cc-8a34-0f476fed53fc: 'Service Icon' # Service Icon
+    7a09f52f-88d7-44f6-a8fb-23c22b5fb5d8: 'Main Intro' # Main Intro
+    7d7e245e-9b3d-42b3-aa11-7e016fa7b405: 'Details Title' # Details Title
+    037d90dc-b476-4aca-a98a-84295b48e0de: Accommodations # Accommodations
+    41cb8510-c082-45cb-b599-0a1e71b50456: Photo # Photo
+    57ced721-e5fd-4452-a01d-9cd206bbdebe: 'Link Url' # Link Url
+    65dbfff9-e762-48a3-a0c1-92d0c90fca20: Detail # Detail
+    65e0c5a7-383a-403f-aef3-970aa4d2f888: 'Services Title' # Services Title
+    86cbfc6b-2acd-4bd7-ba76-ccda847449e4: 'Header Intro' # Header Intro
+    89f92c22-573c-4c25-b6a5-efc7d0708203: Category # Category
+    340e935e-a842-40c1-b3be-f0667d36f47a: Common # Common
+    345d915d-6b91-41c7-b70b-d38b48b61499: 'Intro Title' # Intro Title
+    501fca6a-4c06-4933-8a5c-764182d80cd3: Services # Services
+    574dd50e-6cee-43ef-8289-c275bceeb70e: Homepage # Homepage
+    629ee63d-b042-446e-92f3-5d03099f25d6: 'Photo Album' # Photo Album
+    711b867c-27e3-4f0f-a238-4b821c20d98c: SEO # SEO
+    4886b05b-74ca-4511-b779-641cade722e0: services # services
+    17232cf9-cca3-46db-8a04-6c606a76f6f1: 'Gjerde Camping EN' # Gjerde Camping EN
+    22063a2e-a79d-4fe5-8efa-ba6ce00aacb1: Photos # Photos
+    35335f0a-2360-425c-bec6-a8e20c249e46: Description # Description
+    93181e72-df4b-4d19-aa48-41e97d5e3f82: SEO # SEO
+    4236702f-b01c-4696-b87e-3582a663810a: Description # Description
+    5256133a-b684-446d-8a09-58c71198dce8: 'Footer Links' # Footer Links
+    50699530-9839-4c13-993e-0ea84bc32145: 'Contact Description' # Contact Description
+    51804652-e925-4e6f-b8f8-6ddf00578f0e: 'Intro Text' # Intro Text
+    73698221-0357-4b8f-b5a8-be481fc10e01: 'Gjerde Camping DE' # Gjerde Camping DE
+    a3a32637-5e93-45bc-bf19-8b24d5411de4: Homepage # Homepage
+    a48af025-a9b9-41ce-aba7-f28a42b31c8f: Categories # Categories
+    a92c44e3-546c-475d-ae11-122d1713d268: Title # Title
+    ac38d72a-af9d-484e-a135-1b28dc48b0e3: 'Header Image' # Header Image
+    ae8e12a8-e89b-4b70-811c-a76d258739d2: 'Title Tag' # Title Tag
+    b736fa2c-579c-42f8-8777-eb0a6a1e3852: Accomodations # Accomodations
+    b2629ccf-6435-4ce8-8776-b41d423dd892: AccomodationsTitle # AccomodationsTitle
+    c3bd416f-c827-4383-8a66-497c50362c3e: Price # Price
+    c5cfeb7d-33aa-4d76-9cad-237f33f8c10a: 'Contact Title' # Contact Title
+    cab1941d-81e6-4b6f-a8bd-942b6308795e: 'Details Image' # Details Image
+    d9c1618a-b5e8-4988-ac20-3f039b34b723: 'Intro Image' # Intro Image
+    d13a04c5-1b82-4937-9619-0d1bda7a004c: 'Description Tag' # Description Tag
+    d3396d50-6b99-44e2-a0ab-1d584a123b96: Link # Link
+    d66411b8-3b8d-4763-9f8b-8f54c6ca6aef: 'Gjerde-Camping NO' # Gjerde-Camping NO
+    dacd5f36-55dd-4da3-8533-9102f19f5b80: 'Header Title' # Header Title
+    e057b045-4741-423f-8287-e908f780562a: 'albums Title' # albums Title
+    e3eb08b8-e942-420d-96fc-96ff91d4418f: Gjerde-Camping # Gjerde-Camping
+    e51cd8bf-e6f2-42f5-a1b1-6958c677d048: 'Testimonials Title' # Testimonials Title
+    e821e044-4651-4757-8cb5-df7d83c0936c: 'Testimonials Description' # Testimonials Description
+    ec81f51d-df94-417a-991f-5abb8505391f: Image # Image
+    f65102d1-dfb3-4399-9a92-68cfd77420b9: URL # URL
+    fccce7af-0dd9-4890-acde-9354f9df3ad6: Services # Services
 plugins:
   contact-form:
     edition: standard
@@ -50,7 +107,7 @@ system:
   edition: solo
   live: true
   name: Gjerde-Camping
-  schemaVersion: 3.6.8
+  schemaVersion: 3.7.7
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

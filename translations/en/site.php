@@ -2,7 +2,7 @@
 
 return [
     'DETAILS' => 'DETAILS',
-    'ACCOMODATIONS' => 'ACCOMODATIONS',
+    'ACCOMODATIONS' => 'ACCOMMODATIONS',
     'Starting at' => 'Starting at',
     'HOME' => 'HOME',
     'INTRO' => 'INTRO',
@@ -15,7 +15,7 @@ return [
     'Get In Touch Using The Form' => 'Get In Touch Using The Form',
     'You can give us a call or just use the contact form below for any questions and inquiries' => 'You can give us a call or just use the contact form below for any questions and inquiries',
     'Follow Gjerde Camping On Social Media' => 'Follow Gjerde Camping On Social Media',
-    'SUBMIT MESSAGE' => 'SUBMIT MESSAG',
+    'SUBMIT MESSAGE' => 'SUBMIT MESSAGE',
     'Success!' => 'Success!',
     'DISCOVER' => 'DISCOVER',
     'Your Email' => 'Your Email',

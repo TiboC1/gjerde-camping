@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a23c3f1db0dae1ddf2b5e3436714b160",
+    "content-hash": "e5c331d5103c975e6fbc0a23306ec08d",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -349,11 +349,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.6.17",
+            "version": "3.7.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/4497db8b89474a68fc43ee1d7f8b78beff9dc6f2",
-                "reference": "4497db8b89474a68fc43ee1d7f8b78beff9dc6f2",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/decd6357a721caef1a1e586412a66a11470c7387",
+                "reference": "decd6357a721caef1a1e586412a66a11470c7387",
                 "shasum": ""
             },
             "require": {
@@ -374,7 +374,7 @@
                 "ext-zip": "*",
                 "guzzlehttp/guzzle": "^6.5.5|^7.2.0",
                 "laminas/laminas-feed": "~2.12.3|^2.13.1",
-                "league/flysystem": "^1.1.3",
+                "league/flysystem": "^1.1.4",
                 "league/oauth2-client": "^2.6.0",
                 "mikehaertl/php-shellcommand": "^1.6.3",
                 "php": ">=7.2.5",
@@ -437,7 +437,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2021-06-15T15:59:20+00:00"
+            "time": "2021-07-20T03:24:55+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -1144,19 +1144,21 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.8.2",
+            "version": "2.0.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/dc960a912984efb74d0a90222870c72c87f10c91",
-                "reference": "dc960a912984efb74d0a90222870c72c87f10c91",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/1dc8d9cba3897165e16d12bb13d813afb1eb3fe7",
+                "reference": "1dc8d9cba3897165e16d12bb13d813afb1eb3fe7",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0",
-                "psr/http-message": "~1.0",
-                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
+                "php": "^7.2.5 || ^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0",
+                "ralouphie/getallheaders": "^3.0"
             },
             "provide": {
+                "psr/http-factory-implementation": "1.0",
                 "psr/http-message-implementation": "1.0"
             },
             "suggest": {
@@ -1165,16 +1167,13 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
                     "GuzzleHttp\\Psr7\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
+                }
             },
             "license": [
                 "MIT"
@@ -1188,6 +1187,11 @@
                 {
                     "name": "Tobias Schultze",
                     "homepage": "https://github.com/Tobion"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://sagikazarmark.hu"
                 }
             ],
             "description": "PSR-7 message implementation that also provides common utility methods",
@@ -1201,7 +1205,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2021-04-26T09:17:50+00:00"
+            "time": "2021-06-30T20:03:07+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2024,6 +2028,52 @@
             "time": "2020-06-29T06:28:15+00:00"
         },
         {
+            "name": "psr/http-factory",
+            "version": "1.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2019-04-30T12:38:16+00:00"
+        },
+        {
             "name": "psr/http-message",
             "version": "1.0.1",
             "dist": {
@@ -2458,11 +2508,11 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v5.3.0",
+            "version": "v5.3.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/348116319d7fb7d1faa781d26a48922428013eb2",
-                "reference": "348116319d7fb7d1faa781d26a48922428013eb2",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/19b71c8f313b411172dd5f470fd61f24466d79a9",
+                "reference": "19b71c8f313b411172dd5f470fd61f24466d79a9",
                 "shasum": ""
             },
             "require": {
@@ -2493,7 +2543,7 @@
             ],
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
-            "time": "2021-05-26T17:43:10+00:00"
+            "time": "2021-06-30T07:27:52+00:00"
         },
         {
             "name": "symfony/finder",
@@ -3152,11 +3202,11 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.3.2",
+            "version": "v5.3.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/0732e97e41c0a590f77e231afc16a327375d50b0",
-                "reference": "0732e97e41c0a590f77e231afc16a327375d50b0",
+                "url": "https://api.github.com/repos/symfony/string/zipball/bd53358e3eccec6a670b5f33ab680d8dbe1d4ae1",
+                "reference": "bd53358e3eccec6a670b5f33ab680d8dbe1d4ae1",
                 "shasum": ""
             },
             "require": {
@@ -3202,15 +3252,15 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2021-06-06T09:51:56+00:00"
+            "time": "2021-06-27T11:44:38+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v5.3.2",
+            "version": "v5.3.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/71719ab2409401711d619765aa255f9d352a59b2",
-                "reference": "71719ab2409401711d619765aa255f9d352a59b2",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/485c83a2fb5893e2ff21bf4bfc7fdf48b4967229",
+                "reference": "485c83a2fb5893e2ff21bf4bfc7fdf48b4967229",
                 "shasum": ""
             },
             "require": {
@@ -3251,7 +3301,7 @@
             ],
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
-            "time": "2021-06-06T09:51:56+00:00"
+            "time": "2021-06-24T08:13:00+00:00"
         },
         {
             "name": "true/punycode",
