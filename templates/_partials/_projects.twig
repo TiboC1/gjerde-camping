@@ -11,9 +11,9 @@
                 <!-- Filter -->
                 <div class="button-group filters-button-group">
                     {% set categories = craft.entries.section('photoCategories').all() %}
-                    <a class="button is-checked" style="text-decoration: none" data-filter="*"><span>{{ 'SHOW ALL' | t }}</span></a>
+                    <a href="javascript:void(0)" class="button is-checked" style="text-decoration: none" data-filter="*"><span>{{ 'SHOW ALL' | t }}</span></a>
                     {% for category in categories %}
-                        <a class="button" style="text-decoration: none" data-filter=".{{ category.slug }}"><span>{{ category.title | upper }}</span></a>
+                        <a href="javascript:void(0)" class="button" style="text-decoration: none" data-filter=".{{ category.slug }}"><span>{{ category.title | upper }}</span></a>
                     {% endfor %}
                 </div> <!-- end of button group -->
                 <div class="grid">
